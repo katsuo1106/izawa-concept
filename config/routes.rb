@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root to: "wires#concept"
-  resources :wires
+  resources :wires, only: [:index, :new, :create]
 end

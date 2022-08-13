@@ -1,2 +1,12 @@
 井澤側
 <%= link_to 'コンセプト側へ',root_path %>
+<div class="contents row">
+  <% @wires.each do |wire| %>
+    <div>
+      <p><%= wire.hinban %></p>
+      <span class="name">
+        <%= wire.seisan %>
+      </span>
+    </div>
+  <% end %>
+</div>
